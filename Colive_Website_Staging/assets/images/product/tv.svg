@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="33px" viewBox="0 0 40 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>BC48FBDC-8E84-4BFF-8A49-BEE52D1E1249</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Main-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product-page" transform="translate(-172.000000, -1762.000000)" stroke="#EF0073">
+            <g id="Group-92" transform="translate(172.000000, 1762.000000)">
+                <g id="Group-91">
+                    <g id="Group-2">
+                        <rect id="Rectangle" x="7.5" y="0.5" width="25" height="16"></rect>
+                        <rect id="Rectangle" x="0.5" y="20.5" width="14" height="12"></rect>
+                        <rect id="Rectangle-Copy-34" x="14.5" y="20.5" width="25" height="12"></rect>
+                        <path d="M15,26.85 L39.1665039,26.85" id="Path-23"></path>
+                        <path d="M11.5,25 L11.5,27.275" id="Path-24" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M21.5,17 L21.5,20" id="Path-25-Copy" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <path d="M18.5,17 L18.5,20" id="Path-25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,312 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdnjs.cloudflare.com/ajax/libs/popper.js/ https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/">
+    <title>Contest - Colive</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- favicon -->
+    <link rel="icon" href="https://www.colive.in/favicon.png" type="image/png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/webcontest/css/webconteststyles.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+<body id="site_homepage">
+
+    <!-- site header include -->
+    <div class="header include" id="site-header" data-include="header"></div>
+
+  <!-- Toast Section(alert popup) -->
+  <div class="toastwrap">
+    <div class="toast">
+      <i class="fa fa-times toastclose" aria-hidden="true" onclick="$('.toastwrap').fadeOut();"></i>
+      <span id="ToastMsg" class="ToastMsg"></span>
+    </div>
+  </div>
+
+  <!-- WebContest Section -->
+  <section class="Webcontest" id="Webcontest">
+    <div class="banner">
+      <div class="container">
+        <div class="Webcontest_Banner_Section text-center">
+          <div class="Bold_Title">Make Winning A Habit</div>
+          <div class="Lite_Title">Not An Option</div>
+        </div>
+        <div class="Webcontent_Register_Block">
+          <div class="row">
+            <!-- /. Left Image -->
+            <div class="col col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="WebcontestImg ContestImg">
+                <div class="Div_ContestImg" id="ContestContainer">
+                  <!--<a href="/marketing/contest/foodcontest.html">
+                                    <img src="http://qa.colive.in/utility/files/PropertyAlbum/Colive_001_Innovative_Aqua_Front/3_20200410125602.jpg" class="img-fluid" />
+									</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /. Form Register Section -->
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="Form_Register_Section">
+                                <div class="Form_Text_Val" id="contestname1"></div>
+                                <!--<div class="Form_Text_Val">and Jump Right In</div>-->
+                                <div class="Div_FormPlacement">
+
+                                    <form id="touchwithus" class="" method="">
+                                        <fieldset>
+                                            <div class="d-lg-flex d-md-flex d-sm-flex d-xs-block Name_Div_Block">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="firstname" id="firstname" aria-describedby="firstnameHelp" placeholder="First Name *">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="lastname" id="lastname" aria-describedby="lastnameHelp" placeholder="Last Name *">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email *">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="tel form-control" name="mobilenumber" id="mobilenumber" pattern="[0-9]{10}" x-autocompletetype="tel" maxlength="10" aria-describedby="mobileHelp" placeholder="Phone number *" required="">
+                                            </div>                                            
+                                            <div class="form-group FileUpload_Control_Div" id="dvFileUpload">
+                                                <img id="Imgcontest_0" style="display:none;" src="" onclick="$('#fileupload_0').click()" />
+                                                <input type="file" class="CustomfileUpload form-control" accept="image/*" onchange="handleContestFileImg(this);" data-imgsrc="Imgcontest_0" data-imagebinaryid="hdnidcontestImageBinary_0"
+                                                       data-labelid="spncontestFileName_0" data-filenameid="hdnidcontestImageFile_0" name="fileupload" id="fileupload_0" aria-describedby="uploadHelp" required="" multiple>
+                                                <input type="hidden" id="hdnidcontestImageBinary_0" name="file" />
+                                                <input type="hidden" id="hdnidcontestImageFile_0" name="file" />
+                                                <button type='button' id="btnaddmorefile" class="FileUploadBtn pull-right">Add More Files</button>
+                                                <p class="pull-left WarningMSg_FileUpload">*Not more than 4MB</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="FormReg_Submit">
+                                                    <input type="button" class="btn btn-primary" value="Submit" id="submit" onclick="ContestSumbit();">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /. Register Block End -->
+            <!-- Know More Toggle -->
+            <div class="ToggleKnow_More">
+                <div class="Div_SlideToggle">
+                    <div class="Click_ToggleDiv bg-purple" id="Click_ToggleDiv">Know More <div class="Div_arrowtag"><img src="/assets/webcontest/img/downarrow.png" class="img-fluid" /></div></div>
+                    <div class="container" id="Contest_Div_Expand">
+                        <div class="Contest_Contact_Details">
+                            <div class="Contenst_Details_Div">Contest Details:</div>
+              <div class="Div_ToggleSlider" id="contestdescription">Share Your food recipe by uploading, best receipe will win an amazon voucher</div>
+                        </div>
+                        <div class="Contest_Date">
+              <div class="Div_ContestStartDate">START DATE: <span class="Span_ContestDate" id="conteststartdate">10.04.2020</span></div>
+              <div class="Div_ContestEndDate">END DATE: <span class="Span_ContestDate" id="contestenddate">10.04.2020</span></div>
+              <div class="Div_ContestPlace">Venue: <span class="Span_ContestPlace" id="contestvenue">From your home</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Know More Toggle -->
+
+            <div class="Contest_Carousel">
+                <div class="Div_Carousel">
+                    <div class="ContestDiv_Caption bg-purple">Previous Contest</div>
+                    <div class="container Div_CarouselContest">
+                        <div id="ContestGames" class="owl-carousel owl-theme">
+                            <!--<div class="item">
+                                <div class="Div_Contest_Game">
+                                    <img src="/assets/webcontest/img/Previous-Contests-01.jpg" class="img-fluid" />
+                                    <div class="Div_Contest_Game_Title">Contest</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="Div_Contest_Game">
+                                    <img src="/assets/webcontest/img/Previous-Contests-02.jpg" class="img-fluid" />
+                                    <div class="Div_Contest_Game_Title">Winner(S)</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="Div_Contest_Game">
+                                    <img src="/assets/webcontest/img/Previous-Contests-01.jpg" class="img-fluid" />
+                                    <div class="Div_Contest_Game_Title">Contest</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="Div_Contest_Game">
+                                    <img src="/assets/webcontest/img/Previous-Contests-02.jpg" class="img-fluid" />
+                                    <div class="Div_Contest_Game_Title">Winner(S)</div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- site footer include -->
+    <footer id="footer">
+        <div class="container-fluid p-0">
+            <!-- Footer menu for desktop and tablet only -->
+            <div class="ipad-modalview">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="panel with-nav-tabs panel-default">
+                        <div class="panel-heading">
+                            <ul class="nav nav-tabs row">
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/">Home</a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/aboutus">About Us</a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/contactus">Contact Us</a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/partnerwithus">Our Partners</a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/careers">Work with Us</a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center dropdown">
+                                    <a href="#" data-toggle="dropdown">More <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="/faq">FAQs</a></li>
+                                        <li><a href="/news">Press</a></li>
+                                        <li><a href="/handbook" target="_blank">Handbook</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="footerPanel-SecondRow">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="Panel-Second-row">
+                            <ul class="list-unstyled quick-links row">
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/cowork247"><img src="/assets/images/footer/CoWork247.png" class="img-fluid" /><div>CoWork247</div></a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/corporate"><img src="/assets/images/footer/ColiveForCorporates.png" class="img-fluid" /><div>Colive for Corporates</div></a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="http://blog.colive.in/"><img src="/assets/images/footer/Blogs.png" class="img-fluid" /><div>Blogs</div></a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/community"><img src="/assets/images/footer/Events.png" class="img-fluid" /><div>Community</div></a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/socialmedia"><img src="/assets/images/footer/wearesocial.png" class="img-fluid" /><div>We are Social</div></a></li>
+                                <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/awards-recognition"><img src="/assets/images/footer/awardsrecognition.png" class="img-fluid" /><div>Awards & Recognition</div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="Panel-Third-row">
+                        <ul class="list-unstyled quick-links row">
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="http://locations.colive.in/" target="_blank">Find a Property</a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/sitemap">Sitemap</a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/privacypolicy">Privacy Policy </a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/termsandconditions"> Terms & Conditions</a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/mobile-apps">Download Apps</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© Colive 2020</div>
+    </footer>
+    <!-- social buttons, terms & condition and privacy policy -->
+    <!-- model popup -->
+    <div class="modal" id="video-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container" id="divLocationMenus">
+                <!-- HERE ADD Menus -->
+                <div class="CityList" id="CityList">
+
+                </div>
+            </div>
+            <button class="modal-close is-large" id="btnClose" aria-label="close">
+                <svg version="1.1" class="svgClose" id="closeLoc" style="transform:rotate(270deg);" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" xml:space="preserve"><path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path></svg>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="CssLoaderStyles" id="AjaxLoader" style="display: none;">
+        <div class="CssLoaderAlign">
+            <div class="Logo-loader"></div>
+            <div class="logoloader"></div>
+        </div>
+    </div>
+    <input type="hidden" id="hdnContestId" runat="server" clientidmode="static" value="0" />
+    <input type="hidden" id="hdnContestName" runat="server" clientidmode="static" value="" />
+    <!-- js included -->
+    <script defer src="/assets/js/custom.js"></script>
+
+    <!-- ./Footer -->
+    <!-- jQuery first, then Popper, then Bootstrap JS., owl-carousel2 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/assets/js/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            BindContests();
+
+            $('#Click_ToggleDiv').click(function () {
+                $('#Contest_Div_Expand').slideToggle();
+            });
+            
+
+            $('.FileUploadBtn').click(function (e) {
+                e.preventDefault();
+                var dvlen = $('#dvFileUpload input[name="fileupload"]').length;
+                if (dvlen <= 2) {
+                    var onclk = "$('#fileupload_" + dvlen + "').click()";
+                    $(this).before("<img id='Imgcontest_" + dvlen + "' style='display:none'  onclick='Callchange(" + dvlen + ")' src =''/>");
+                    $(this).before("<input name='fileupload'  data-labelid='spncontestFileName_" + dvlen + "'  data-filenameid='hdnidcontestImageFile_" + dvlen + "' data-imgsrc='Imgcontest_" + dvlen + "' data-imagebinaryid='hdnidcontestImageBinary_" + dvlen + "' accept='image/*' onchange='handleContestFileImg(this);' id='fileupload_" + dvlen + "' type='file'/>");
+                    $(this).before("<input type='hidden' id='hdnidcontestImageBinary_" + dvlen + "' name='file' />");
+                    $(this).before("<input type='hidden' id='hdnidcontestImageFile_" + dvlen + "' name='file' />");
+                }
+                if (dvlen == 2)
+                    $('#btnaddmorefile').css("display", "none");
+            });
+
+            function Callchange(obj) {
+                $('#fileupload_' + obj + '').trigger("onchange");
+            }
+
+
+            $("#touchwithus").validate({
+                rules: {
+                    firstname: "required",
+                    lastname: "required",
+                    mobilenumber: {
+                        required: true,
+                        number: true,
+                        maxlength: 10
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    heading: "required",
+                    hashtag: "required",
+                    fileupload: "required"
+                },
+                messages: {
+                    firstname: 'Please enter your firstname',
+                    lastname: 'Please enter your lastname',
+                    mobilenumber: 'Please enter phone number',
+                    email: 'Please enter your email id',
+                    heading: 'Please enter heading for your image',
+                    hashtag: 'Pleaes enter #Tag for your image',
+                    fileupload: 'Please upload your attachment'
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>

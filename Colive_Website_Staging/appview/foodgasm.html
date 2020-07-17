@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://maps.googleapis.com/ https://code.jquery.com https://cdnjs.cloudflare.com/ajax/libs/popper.js/ https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/ https://cdnjs.cloudflare.com/ajax/libs/popper.js/ https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/ https://cdnjs.cloudflare.com/ajax/libs/popper.js/ https://www.googletagmanager.com/ https://salesiq.zoho.com/widget https://www.google-analytics.com/analytics.js https://www.googleadservices.com/pagead/conversion_async.js http://static.hotjar.com/ https://script.hotjar.com/ https://googleads.g.doubleclick.net/pagead/ https://connect.facebook.net/ http://www.googleadservices.com/">
+    <title runat="server" id="propertyTitle">Colive - FoodGasm</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- favicon -->
+    <link rel="icon" href="/assets/images/favicon.png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/styles.css?d=20191119">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <style>
+        #foodgasm .p-0 {
+            padding: 0px;
+        }
+
+        #foodgasm .carousel-img {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        #foodgasm .FoodName {
+            position: absolute;
+            z-index: 8;
+            opacity: 1;
+            bottom: 0;
+            width: 90%;
+            background: #ef0073;
+            border-radius: 6px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            color: #fff;
+            padding: 8px 15px 4px 15px;
+        }
+
+        #foodgasm .NameofFood {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        #foodgasm .NameofFoodCat {
+            font-weight: 500;
+        }
+
+        #foodgasm .FoodRateCard {
+            margin: 0 auto;
+            width: 90%;
+            box-shadow: 0px 3px 6px #b9b9b9;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #foodgasm .FoodRatingtotal {
+            font-size: 12px;
+            font-weight: 400;
+            color: #848282;
+        }
+
+        #foodgasm .FoodDeliverExp {
+            font-size: 12px;
+            font-weight: 400;
+            color: #848282;
+        }
+
+        #foodgasm .FoodCostExp {
+            font-size: 12px;
+            font-weight: 400;
+            color: #848282;
+        }
+
+        #foodgasm .FoodRate {
+            text-align: center;
+        }
+
+        #foodgasm .Foodratingcard .fa {
+            color: #ffc905;
+            padding-right: 2px;
+        }
+
+        #foodgasm .FoodDeliverTIming .fa {
+            color: #2196F3;
+            padding-right: 5px;
+        }
+
+        #foodgasm .FoodCost .fa:before {
+            color: #ef0073 !important;
+            padding-right: 5px;
+        }
+
+        #foodgasm .Foodratingcard,
+        #foodgasm .FoodDeliverTIming,
+        #foodgasm .FoodCost {
+            font-weight: 600;
+        }
+
+        #foodgasm .FoodContentWrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #foodgasm .FooDCatTitle h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #112950;
+        }
+        #foodgasm .FoodCunt {
+            float: right;
+            font-weight: 600;
+            color: #ef0073;
+        }
+        #foodgasm .navbar ul.menu > li:hover .FoodCunt {
+            color: #fff !important;
+        }
+        #foodgasm .FoodCatDes p {
+            font-size: 14px;
+            line-height: 22px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+        #foodgasm .Foodvarity {
+            font-weight: 500;
+            color: #808080;
+            padding-top: 1px;
+        }
+        #foodgasm .VegNV {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        #foodgasm .VEGNvDet img {
+            width: 60%;
+        }
+        #foodgasm .VefNonVegDes {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #848484;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        #foodgasm .VefNonVegDes img {
+            width: 20%;
+            padding-right: 8px;
+        }
+        #foodgasm .Flex-alignFood {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #foodgasm .VEGNvDet {
+            width: 90%;
+            margin: 0 auto;
+            padding-left: 1px;
+            display: flex;
+            align-items: center;
+            border-top: 2px dashed #e8e8e8;
+            border-bottom: 2px dashed #e8e8e8;
+            position: relative;
+            min-height: 50px;
+        }
+        #foodgasm .SharingCOunterFood {
+            text-align: center;
+            position: absolute;
+            right: 0;
+        }
+        #foodgasm .SharingFood {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        #foodgasm .SharingCOunterFood svg path {
+            fill: #ef0073;
+        }
+        #foodgasm .SharingCOunterFood svg {
+            width: 25px;
+            fill: #fff;
+            height: auto;
+            margin: 7px;
+            margin-bottom: 0px;
+        }
+        #foodgasm {
+            padding-bottom: 30px;
+        }
+        #foodgasm .FoodCalories img {
+            width: 20%;
+            height: auto;
+        }
+        #foodgasm .FoodCalories {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+        }
+        #foodgasm .FoodCalories .CaloreisSec {
+            font-size: 16px;
+            padding-left: 8px;
+            padding-right: 10px;
+            font-weight: 700;
+        }
+        .FoodGasamFunction {
+            padding: 15px;
+            background: #efefef;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body id="foodgasm">
+
+    <!-- site header include
+    <div class="header include" id="site-header" data-include="header"></div>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-6 offset-lg-3 small-offset-0 p-0">
+                <div id="DivFoodMenu" class="owl-carousel owl-theme owl-carousel-slider"></div>
+                <div class="FoodGasamFunction">“To Subscribe Now, click on Foodgasm tab on the Colive App”</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<div class="footer include" id="site-footer" data-include="footer"></div>-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script defer src="/assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            GetFoodMenuDetails();             
+        });
+    </script>
+</body>
+</html>

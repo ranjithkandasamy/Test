@@ -1,0 +1,804 @@
+﻿<!doctype html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <link rel="canonical" href="https://www.colive.in">
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <title>Colive</title>
+    <link rel="icon" href="https://www.colive.in/favicon.png" type="image/png" />
+    <style amp-custom="">
+        /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
+
+        /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        article, aside, footer, header, nav, section {
+            display: block
+        }
+
+
+        .border-box {
+            box-sizing: border-box
+        }
+
+        .col {
+            float: left
+        }
+
+        .col, .col-right {
+            box-sizing: border-box
+        }
+
+        .col-right {
+            float: right
+        }
+
+        .col-1 {
+            width: 8.33333%
+        }
+
+        .col-2 {
+            width: 16.66667%
+        }
+
+        .col-3 {
+            width: 25%
+        }
+
+        .col-4 {
+            width: 33.33333%
+        }
+
+        .col-5 {
+            width: 41.66667%
+        }
+
+        .col-6 {
+            width: 50%
+        }
+
+        .col-7 {
+            width: 58.33333%
+        }
+
+        .col-8 {
+            width: 66.66667%
+        }
+
+        .col-9 {
+            width: 75%
+        }
+
+        .col-10 {
+            width: 83.33333%
+        }
+
+        .col-11 {
+            width: 91.66667%
+        }
+
+        .col-12 {
+            width: 100%
+        }
+
+        @media (min-width: 40.06rem) {
+            .sm-col {
+                float: left;
+                box-sizing: border-box
+            }
+
+            .sm-col-right {
+                float: right;
+                box-sizing: border-box
+            }
+
+            .sm-col-1 {
+                width: 8.33333%
+            }
+
+            .sm-col-2 {
+                width: 16.66667%
+            }
+
+            .sm-col-3 {
+                width: 25%
+            }
+
+            .sm-col-4 {
+                width: 33.33333%
+            }
+
+            .sm-col-5 {
+                width: 41.66667%
+            }
+
+            .sm-col-6 {
+                width: 50%
+            }
+
+            .sm-col-7 {
+                width: 58.33333%
+            }
+
+            .sm-col-8 {
+                width: 66.66667%
+            }
+
+            .sm-col-9 {
+                width: 75%
+            }
+
+            .sm-col-10 {
+                width: 83.33333%
+            }
+
+            .sm-col-11 {
+                width: 91.66667%
+            }
+
+            .sm-col-12 {
+                width: 100%
+            }
+        }
+
+        @media (min-width: 52.06rem) {
+            .md-col {
+                float: left;
+                box-sizing: border-box
+            }
+
+            .md-col-right {
+                float: right;
+                box-sizing: border-box
+            }
+
+            .md-col-1 {
+                width: 8.33333%
+            }
+
+            .md-col-2 {
+                width: 16.66667%
+            }
+
+            .md-col-3 {
+                width: 25%
+            }
+
+            .md-col-4 {
+                width: 33.33333%
+            }
+
+            .md-col-5 {
+                width: 41.66667%
+            }
+
+            .md-col-6 {
+                width: 50%
+            }
+
+            .md-col-7 {
+                width: 58.33333%
+            }
+
+            .md-col-8 {
+                width: 66.66667%
+            }
+
+            .md-col-9 {
+                width: 75%
+            }
+
+            .md-col-10 {
+                width: 83.33333%
+            }
+
+            .md-col-11 {
+                width: 91.66667%
+            }
+
+            .md-col-12 {
+                width: 100%
+            }
+        }
+
+        @media (min-width: 64.06rem) {
+            .lg-col {
+                float: left;
+                box-sizing: border-box
+            }
+
+            .lg-col-right {
+                float: right;
+                box-sizing: border-box
+            }
+
+            .lg-col-1 {
+                width: 8.33333%
+            }
+
+            .lg-col-2 {
+                width: 16.66667%
+            }
+
+            .lg-col-3 {
+                width: 25%
+            }
+
+            .lg-col-4 {
+                width: 33.33333%
+            }
+
+            .lg-col-5 {
+                width: 41.66667%
+            }
+
+            .lg-col-6 {
+                width: 50%
+            }
+
+            .lg-col-7 {
+                width: 58.33333%
+            }
+
+            .lg-col-8 {
+                width: 66.66667%
+            }
+
+            .lg-col-9 {
+                width: 75%
+            }
+
+            .lg-col-10 {
+                width: 83.33333%
+            }
+
+            .lg-col-11 {
+                width: 91.66667%
+            }
+
+            .lg-col-12 {
+                width: 100%
+            }
+        }
+
+        .flex {
+            display: -ms-flexbox;
+            display: flex
+        }
+
+        @media (min-width: 40.06rem) {
+            .sm-flex {
+                display: -ms-flexbox;
+                display: flex
+            }
+        }
+
+        @media (min-width: 52.06rem) {
+            .md-flex {
+                display: -ms-flexbox;
+                display: flex
+            }
+        }
+
+        @media (min-width: 64.06rem) {
+            .lg-flex {
+                display: -ms-flexbox;
+                display: flex
+            }
+        }
+
+        .flex-column {
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+
+        .flex-wrap {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap
+        }
+
+        .flex-auto {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            min-width: 0;
+            min-height: 0
+        }
+
+        .flex-none {
+            -ms-flex: none;
+            flex: none
+        }
+
+        .hide {
+            position: absolute;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px)
+        }
+
+        @media (max-width: 40rem) {
+            .xs-hide {
+                display: none
+            }
+        }
+
+        @media (min-width: 40.06rem) and (max-width: 52rem) {
+            .sm-hide {
+                display: none
+            }
+        }
+
+        @media (min-width: 52.06rem) and (max-width: 64rem) {
+            .md-hide {
+                display: none
+            }
+        }
+
+        @media (min-width: 64.06rem) {
+            .lg-hide {
+                display: none
+            }
+        }
+
+        .display-none {
+            display: none
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            background: #fff;
+            color: #222;
+            font-family: Helvetica, serif;
+            min-width: 315px;
+            overflow-x: hidden;
+            font-smooth: always;
+            -webkit-font-smoothing: antialiased
+        }
+
+        p {
+            padding: 0;
+            margin: 0
+        }
+
+        /*./*/
+        .m-auto {
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .OTP_Vefirication {
+            border: 0px;
+            border-bottom: 2px solid #b7b7b7;
+            background: transparent;
+            outline: none;
+        }
+
+        .otpthankyou fieldset {
+            border: 0px;
+        }
+
+        .otpthankyou .FormOtp {
+            background: #f5f5f5;
+            padding: 17px;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            position: relative;
+        }
+
+            .otpthankyou .FormOtp .ButtonWrap {
+                font-weight: 600;
+                color: #ef0073;
+                margin-bottom: 13px;
+            }
+
+        .FormSelectingQues {
+            margin-top: 1rem;
+        }
+
+            .FormSelectingQues p {
+                font-weight: 600;
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 22px;
+            }
+
+            .FormSelectingQues > div {
+                margin: 5px 0;
+                padding: 5px 0;
+                position: relative;
+            }
+
+                .FormSelectingQues > div select {
+                    margin: 5px 0px;
+                }
+
+                .FormSelectingQues > div select {
+                    margin: 5px 0px;
+                    width: 50%;
+                    border: 0px;
+                    border-bottom: 2px solid #e8e6e6;
+                    padding: 6px 0px;
+                    outline: none;
+                    font-size: 14px;
+                    color: #545454;
+                    font-weight: 600;
+                }
+
+        .otpthankyou_btn {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+            .otpthankyou_btn button[type="submit"] {
+                background: #ef0073;
+                color: #fff;
+                border: 2px solid #ef0073;
+                padding: 6px 25px;
+                font-weight: 600;
+                border-radius: 3px;
+                outline: none;
+                cursor: pointer;
+            }
+
+        .otpthankyou .FormOtp .ButtonWrap + input {
+            border: 0;
+            border-bottom: 2px solid #b7b7b7;
+            background: transparent;
+            color: #222;
+            padding: 0;
+            margin-top: 0px;
+            cursor: auto;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        [type=radio] {
+            margin-top: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #222;
+            vertical-align: middle;
+            margin-right: .5rem;
+            text-align: center;
+            border-radius: 15px;
+            color: #222;
+            line-height: 1.5rem;
+            outline: none;
+            position: relative;
+        }
+
+        input[type=radio]:after {
+            position: absolute;
+            content: " ";
+            line-height: 1.4rem;
+            vertical-align: middle;
+            text-align: center;
+            background-color: #9c9292;
+            top: 3px;
+            bottom: 3px;
+            left: 3px;
+            right: 3px;
+            border-radius: 12px;
+        }
+
+        input[type=radio]:checked:after {
+            content: "";
+            font-size: 3.5rem;
+            background-color: #ef0073;
+        }
+
+        .FormSelectingQues > div.CareerInfo label {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .validationError {
+            width: auto;
+            color: #fff;
+            height: 23px;
+            font-size: 11px;
+            line-height: 17px;
+            padding: 3px 5px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            left: 100px;
+            top: 74px;
+            z-index: 9;
+            background: #ef1a1a;
+            margin-right: 33px;
+            position: absolute;
+            float: right
+        }
+
+            .validationError::before {
+                border-bottom: 6px solid #ef1a1a;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                content: "";
+                height: 0;
+                position: absolute;
+                top: -6px;
+                width: 0;
+                right: 10px
+            }
+
+        .validationErrorOthers {
+            width: auto;
+            color: #fff;
+            height: 23px;
+            font-size: 11px;
+            line-height: 17px;
+            padding: 3px 5px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            left: 75px;
+            top: 102px;
+            z-index: 9;
+            background: #ef1a1a;
+            margin-right: 33px;
+            position: absolute;
+            float: right
+        }
+
+            .validationErrorOthers::before {
+                border-bottom: 6px solid #ef1a1a;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                content: "";
+                height: 0;
+                position: absolute;
+                top: -6px;
+                width: 0;
+                right: 10px
+            }
+
+        input#OtherAccomdation,
+        input#OrganizationName {
+            margin: 5px 0px;
+            width: 42.3%;
+            border: 0px;
+            border-bottom: 2px solid #e8e6e6;
+            padding: 6px 0px;
+            outline: none;
+            font-size: 14px;
+            color: #545454;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .loader {
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 10000000;
+            background: #ffffffde;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+
+        .strip-holder {
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            position: relative;
+            margin: 0 auto;
+            text-align: -webkit-center;
+            text-align: -moz-center;
+        }
+    </style>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none;
+            }
+        </style>
+    </noscript>
+
+</head>
+<body>
+    <!-- Global site tag (gtag) - Google Ads: 918341494 -->
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+            {
+            "vars": {
+            "gtag_id": "AW-918341494",
+            "config": {
+            "AW-918341494": {
+            "groups": "default"
+            }
+            }
+            },
+            "triggers": {
+            "C_JuP4ckFHtIU": {
+            "on": "visible",
+            "vars": {
+            "event_name": "conversion",
+            "send_to": ["AW-918341494/nrSwCOaGnMkBEPaO87UD"]
+            }
+            }
+            }
+            }
+        </script>
+    </amp-analytics>
+
+    <section class="pt2 pb3 md-px4 md-pt4 md-pb7 col-12 md-col-8 px2" style="padding:10px;">
+        <a href="/">
+            <amp-img src="/assets/lp/bangalore/assets/images/logo/logo-colive.png" alt="Colive Logo" width="377" height="80" style="margin-bottom:2.5rem; max-width: 250px"
+                     layout="responsive" class="my0"></amp-img>
+        </a>
+    </section>
+
+    <section class="col-12 md-col-6 m-auto otpthankyou">
+        <form action-xhr="/api/AMP/VerifyOTPWithInsert" method="post" target="_top" class="user-invalid" custom-validation-reporting="show-all-on-submit">
+            <fieldset>
+                <div class="FormOtp">
+                    <div class="ButtonWrap thankyou text-white">
+                        Please enter the OTP sent to your mobile *
+                    </div>
+                    <input type="password" maxlength="5" id="txtOTP" name="txtOTP" placeholder="OTP *" class="OTP_Vefirication" required>
+                    <span id="rfvtxtOTP" class="validationError" visible-when-invalid="valueMissing" validation-for="txtOTP">Please enter a OTP</span>
+                    <div submit-error>
+                        <span id="CustxtOTP" class="validationError">Invalid OTP</span>
+                    </div>
+                </div>
+                <div class="FormSelectingQues">
+                    <p>To offer you a property which is most suited for you please help us understand your requirement</p>
+                    <div class="FormSelector">
+                        <label>What kind of accommodation you are currently staying at?</label><br />
+                        <select name="txtAccomdationType" on="change: AMP.pushState({ OtheAccomdationState: event.value.split(',')[1],OtherAccomDationReq: event.value.split(',')[1] != 'active' ? true : false })">
+                            <option value="">Choose your Accomdation Type</option>
+                            <option value="PG,inactive">PG</option>
+                            <option value="Flat,inactive">Flat</option>
+                            <option value="Others - ,active">Others</option>
+                        </select>
+                        <div class="form-group dvOtherAccomdation" hidden [hidden]="OtheAccomdationState != 'active'">
+                            <input type="text" id="OtherAccomdation" name="OtherAccomdation" placeholder="Please Specify" disabled [disabled]="OtherAccomDationReq" required>
+                            <span id="rfvOtherAccomdation" class="validationErrorOthers" visible-when-invalid="valueMissing" validation-for="OtherAccomdation">Please enter a Accomdation</span>
+                        </div>
+                    </div>
+                    <div class="FormSelector">
+                        <label>What's the age group you belong to?</label><br />
+                        <select name="AgeGroup">
+                            <option value="">Choose your Age group</option>
+                            <option value="18 to 22">18 to 22</option>
+                            <option value="23 to 26">23 to 26</option>
+                            <option value="23 to 26">27 to 30</option>
+                            <option value="31 to 35">31 to 35</option>
+                            <option value="35 to 37">35 to 37</option>
+                        </select>
+                    </div>
+
+                    <div class="FormSelector">
+                        <label>What's your marital status?</label><br />
+                        <select id="MaritalStatus" name="MaritalStatus">
+                            <option value="">Choose your Marital Status</option>
+                            <option value="Living in">Living in</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                        </select>
+                    </div>
+
+                    <div class="FormSelector">
+                        <label>For an upgraded community living experience, how much are you willing to spend?</label><br />
+                        <select id="Budget" name="Budget">
+                            <option value="">Choose your Budget</option>
+                            <option value="< 7000">< 7000</option>
+                            <option value="7,000 to 9,000">7,000 to 9,000</option>
+                            <option value="9,000 to 11,000">9,000 to 11,000</option>
+                            <option value="> 11,000">> 11,000</option>
+                        </select>
+                    </div>
+                    <div class="CareerInfo">
+                        <label>What's your job status ?</label><br />
+                        <label><input type="radio" name="rdJobStatus" value="I am Employee - ,active" on="change: AMP.pushState({ EmployeeState: event.value.split(',')[1],OtherOrganization: false })">I am Employee</label>
+                        <div class="form-group" hidden [hidden]="EmployeeState != 'active'">
+                            <input type="text" id="OrganizationName" name="OrganizationName" placeholder="Enter Name of your organization" disabled [disabled]="OtherOrganization" required>
+                            <span id="rfvOrganizationName" class="validationErrorOthers" visible-when-invalid="valueMissing" validation-for="OrganizationName">Please Enter Name of your organization</span>
+                        </div>
+                        <label><input type="radio" name="rdJobStatus" value="I am Student,inactive" on="change: AMP.pushState({ EmployeeState: event.value.split(',')[1],OtherOrganization: true })">I am Student</label>
+                    </div>
+                    <div class="otpthankyou_btn">
+                        <button type="submit" id="btnContinue" class="ampstart-btn ampstart-btn-secondary caps mt3">Continue</button>
+                    </div>
+                </div>
+            </fieldset>
+            <div submitting>
+                <div class="loader" id="AjaxLoader">
+                    <div class="strip-holder">
+                        <amp-img src="/assets/images/loader.gif" alt="Colive Loader" height="50" width="50"></amp-img>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>

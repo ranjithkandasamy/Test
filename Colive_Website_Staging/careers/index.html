@@ -1,0 +1,575 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdnjs.cloudflare.com/ajax/libs/popper.js/ https://www.googletagmanager.com/ https://salesiq.zoho.com/widget https://www.google-analytics.com/analytics.js https://www.googleadservices.com/pagead/conversion_async.js http://static.hotjar.com/ https://script.hotjar.com/ https://googleads.g.doubleclick.net/pagead/ https://connect.facebook.net/ http://www.googleadservices.com/">
+    <title>Careers - Colive</title>
+    <link rel="canonical" href="https://www.colive.in/career"/>
+    <!-- favicon -->
+    <link rel="icon" href="https://www.colive.in/favicon.png" type="image/png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="career_page">
+  <!-- site header include -->
+  <div class="header include" id="site-header" data-include="header"></div>
+
+  <!-- END of fixed call and chat buttons -->
+  <section class="career-wrap">
+    <div class="see-opening-wrap">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center position-relative" id="CareerWrap_sec">
+          <div class="career_search position-absolute">
+            <div class="career-wrap_search">
+              <form id="career_searchform" action="">
+                <div>
+                  <input type="text" value="" name="search" id="career_Search" placeholder="Search For a Job" />
+                  <input name="go" type="button" value="Go" id="search_CareerBtn" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 m-flex">
+          <div class="col-12 col-md-5">
+            <p class="Explore_career">Explore career opprtunities now</p>
+            <div class="expCareer_opp">
+              <form id="exploreCareerOpp" class="" method="" novalidate="novalidate">
+                <fieldset>
+                  <div class="form-group">
+                    <div class="select-drop-down">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      <select class="form-control valid" id="ddlCareerlocation" name="selectloction" aria-invalid="false">
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="select-drop-down">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      <select class="form-control valid" id="ddlcareerdepartment" name="selectdepartment" aria-invalid="false">
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group d-none">
+                    <div class="select-drop-down">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      <select class="form-control valid" id="ddlcareerjobTitle" name="selectdejobTitle" aria-invalid="false">
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="CareerSearchOpt">
+                      <input type="button" class="btn btn-primary" value="Search" id="CareerSearch" onclick="GetJobsFromSearch()">
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <h1 class="text-left mb-3">Careers at Colive</h1>
+            <p>Our leadership takes pride in attracting, developing and engaging an unconventional mix of talent that enables us to think for progress, act for progress and deliver progress.</p>
+            <p class="mt-3"><strong>Are you ready to change the way people live?</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="findJobs">
+      <div class="container">
+        <p class="Career_Title">Find Jobs by Teams</p>
+        <div class="row">
+            <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(1);">
+                <!-- GetJobsbyDepartment(1) -->
+                <div class="CareerJobByteam">
+                    <div class="CareerJobtiles">
+                        <div class="tiles">
+                            <div class="tile">
+                                <img src="/assets/images/career/jobs/Bisiness-Development-&-Expansion.jpg" class="img-fluid" />
+                                <div class="details">
+                                    <span class="title">Business Development & Expansion</span>
+                                    <span class="info">View & Apply</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(2);">
+                <!--GetJobsbyDepartment(2)-->
+                <div class="CareerJobByteam">
+                    <div class="CareerJobtiles">
+                        <div class="tiles">
+                            <div class="tile">
+                                <img src="/assets/images/career/jobs/Human-Resource-&-Development.jpg" />
+                                <div class="details">
+                                    <span class="title">Human Resource & Development</span>
+                                    <span class="info">View & Apply</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(3);">
+              <!-- GetJobsbyDepartment(3)-->
+              <div class="CareerJobByteam">
+                  <div class="CareerJobtiles">
+                      <div class="tiles">
+                          <div class="tile">
+                              <img src="/assets/images/career/jobs/Marketing.jpg" />
+                              <div class="details">
+                                  <span class="title">Marketing</span>
+                                  <span class="info">View & Apply</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(4);">
+            <div class="CareerJobByteam">
+              <div class="CareerJobtiles">
+                <div class="tiles">
+                  <div class="tile">
+                    <img src="/assets/images/career/jobs/Management-Team.jpg" />
+                    <div class="details">
+                        <span class="title">Management Team</span>
+                        <span class="info">View & Apply</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(5);">
+              <!-- GetJobsbyDepartment(5)-->
+              <div class="CareerJobByteam">
+                  <div class="CareerJobtiles">
+                      <div class="tiles">
+                          <div class="tile">
+                              <img src="/assets/images/career/jobs/Operations-&-Service.jpg" />
+                              <div class="details">
+                                  <span class="title">Operations & Service </span>
+                                  <span class="info">View & Apply</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(6);">
+              <!-- /. GetJobsbyDepartment(6); -->
+              <div class="CareerJobByteam">
+                  <div class="CareerJobtiles">
+                      <div class="tiles">
+                          <div class="tile">
+                              <img src="/assets/images/career/jobs/Product-&-Techchnology.jpg" />
+                              <div class="details">
+                                  <span class="title">Product & Techchnology</span>
+                                  <span class="info">View & Apply</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(7);">
+            <div class="CareerJobByteam">
+              <div class="CareerJobtiles">
+                <div class="tiles">
+                    <div class="tile">
+                        <img src="/assets/images/career/jobs/Projects.jpg" />
+                        <div class="details">
+                            <span class="title">Projects</span>
+                            <span class="info">View & Apply</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(8);">
+              <!-- GetJobsbyDepartment(8)-->
+              <div class="CareerJobByteam">
+                  <div class="CareerJobtiles">
+                      <div class="tiles">
+                          <div class="tile">
+                              <img src="/assets/images/career/jobs/Revenue-Management-&-Billings.jpg" />
+                              <div class="details">
+                                  <span class="title">Revenue Management & Billings</span>
+                                  <span class="info">View & Apply</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(9);">
+              <!--GetJobsbyDepartment(9)-->
+              <div class="CareerJobByteam">
+                  <div class="CareerJobtiles">
+                      <div class="tiles">
+                          <div class="tile">
+                              <img src="/assets/images/career/jobs/Sales-&-Growth.jpg" />
+                              <div class="details">
+                                  <span class="title">Sales & Growth</span>
+                                  <span class="info">View & Apply</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col col-lg-4 col-md-4 col-sm-4 col-12" onclick="GetJobsbyDepartment(10);">
+            <div class="CareerJobByteam">
+              <div class="CareerJobtiles">
+                <div class="tiles">
+                    <div class="tile">
+                        <img src="/assets/images/career/jobs/Support.jpg" />
+                        <div class="details">
+                            <span class="title">Support </span>
+                            <span class="info">View & Apply</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ChooseJobSec" id="JobListingSection">
+      <div class="container">
+        <p class="Career_Title">Open Positions</p>
+        <div class="row" id="dvJoblisting">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="perks">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <h2>
+              Unlimited Perks
+            </h2>
+            <p>At Colive, we have a modern and motivating work culture which will not only push you towards personal goals but will also make sure you make unforgettable memories along the way.</p>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="icon-box-wrap row">
+              <div class=" col-6 col-md-4">
+                <div class="icon-box ">
+                  <div>
+                    <div class="career_perks_image">
+                      <img src="/assets/images/career/Achievement-award.png" alt="Achievement_Award" />
+                    </div>
+                    <p>Achievement Award</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-6 col-md-4">
+                <div class="icon-box">
+                  <div>
+                    <div class="career_perks_image">
+                      <img src="/assets/images/career/exible-work-environment.png" alt="Flexible_Work_Environment" />
+                    </div>
+                    <p>Flexible Work Environment</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-6 col-md-4">
+                <div class="icon-box">
+                  <div>
+                    <div class="career_perks_image">
+                      <img src="/assets/images/career/Health-insurance.png" alt="Health_Insurance" />
+                    </div>
+                    <p>Health Insurance</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-6 col-md-4">
+                <div class="icon-box">
+                  <div>
+                    <div class="career_perks_image">
+                      <img src="/assets/images/career/Indoor-games.png" alt="Indoor_Games" />
+                    </div>
+                    <p>Indoor Games</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-6 col-md-4">
+                <div class="icon-box">
+                  <div>
+                    <div class="career_perks_image">
+                      <img src="/assets/images/career/Office-events-&-outings.png" alt="Office_Events_Outings" />
+                    </div>
+                    <p>Office Events & Outings</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-6 col-md-4">
+                <div class="icon-box">
+                  <div>
+                    <div class="career_perks_image">
+                      <img src="/assets/images/career/On-the-job-growth.png" alt="On_The_Job_Growth" />
+                    </div>
+                    <p>On the Job Growth</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="apply-openings">
+      <div class="container">
+        <h3 class="d-none">Openings</h3>
+        <div class="row d-none">
+          <div class="col-12 col-md-4">
+            <div class="apply-wrap">
+              <div class="title">
+                <p>Front End Developer</p>
+                <span>2 years</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod </p>
+              <div class="submit-apply">
+                <a href="#">Apply now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="apply-wrap">
+              <div class="title">
+                <p>Back End Developer</p>
+                <span>2 years</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod </p>
+              <div class="submit-apply">
+                <a href="#">Apply now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="apply-wrap">
+              <div class="title">
+                <p>Sales Executive</p>
+                <span>2 years</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod </p>
+              <div class="submit-apply">
+                <a href="#">Apply now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cant-find mt-0">
+          <p>Can’t find what you’re looking for? Contact us on</p>
+          <p class="email"> crew@colive.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- site footer include -->
+  <div class="footer include" id="site-footer" data-include="footer"></div>
+
+  <!-- model popup -->
+  <div class="modal" id="video-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="container" id="divLocationMenus">
+        <!-- HERE ADD Menus -->
+        <div class="CityList" id="CityList">
+
+        </div>
+      </div>
+      <button class="modal-close is-large" id="btnClose" aria-label="close">
+        <svg version="1.1" class="svgClose" id="closeLoc" style="transform:rotate(270deg);" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" xml:space="preserve"><path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path></svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Apply PopUp Form -->
+  <!-- Modal -->
+  <div id="CareerApplicationPopup" class="modal fade" role="dialog">
+    <div class="CareerModelContainer" id="career_page_wrapper">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="ApplicationWrapper">
+                <p class="SubmitApplicationTitle">Submit Your Application</p>
+                <form id="CareerEnquirySearch">
+                  <div class="row mt-4">
+                    <div class="col col-lg-4 col-md-4 col-12 d-flex align-items-center">
+                      <span class="JobProfileTitle ">Resume/CV <span class="JobProfileImportatn">*</span></span>
+                    </div>
+                    <div class="col col-lg-8 col-md-8 col-12">
+                      <div class="AttachFileSec">
+                        <div class="form-group input-file-container">
+                          <label class="m-bottom15"></label>
+                          <input class="input-file" id="ResumeUpload" data-spanid="spnResumeFileName" data-statusid="spnDocumentStatus" onchange="handleDocument(this);" type="file" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                          <label tabindex="0" for="ResumeUpload" class="input-file-trigger">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i><span id="spnDocumentStatus" class="FileAttachsec">Attach Document</span>
+                          </label>
+                          <span id="spnResumeFileName" class="ResumeFileName"></span>
+                        </div>
+                        <span class="ApplicantExperiencebyMonth"> .Doc, .Docx, .PDF format only</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col col-lg-4 col-md-4 col-12 d-flex align-items-center">
+                      <span class="JobProfileTitle JobproFileName">First Name <span class="JobProfileImportatn">*</span></span>
+                    </div>
+                    <div class="col col-lg-8 col-md-8 col-12">
+                      <div class="NameInputField">
+                        <input type="text" name="firstname" id="txtApplicantFirstname" placeholder="First Name" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col col-lg-4 col-md-4 col-12 d-flex align-items-center">
+                      <span class="JobProfileTitle JobproFileName">Last Name <span class="JobProfileImportatn">*</span></span>
+                    </div>
+                    <div class="col col-lg-8 col-md-8 col-12">
+                      <div class="NameInputField">
+                        <input type="text" name="lastname" id="txtApplicantLastname" placeholder="Last Name" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col col-lg-4 col-md-4 col-12 d-flex align-items-center">
+                      <span class="JobProfileTitle JobproPhoneNumber">Phone <span class="JobProfileImportatn">*</span></span>
+                    </div>
+                    <div class="col col-lg-8 col-md-8 col-12">
+                      <div class="NameInputField">
+                        <input type="tel" name="mobilenumber" id="txtApplicantPhoneNumber" placeholder="Phone No" maxlength="15" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col col-lg-4 col-md-4 col-12 d-flex align-items-center">
+                      <span class="JobProfileTitle JobproEmail">Email <span class="JobProfileImportatn">*</span></span>
+                    </div>
+                    <div class="col col-lg-8 col-md-8 col-12">
+                      <div class="NameInputField">
+                        <input type="email" name="ApplicantEmail" id="txtApplicantEmail" placeholder="Email" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col col-lg-4 col-md-4 col-12 d-flex align-items-center">
+                      <span class="JobProfileTitle JobproExperience">Experience</span>
+                    </div>
+                    <div class="col col-lg-8 col-md-8 col-12">
+                      <div class="AttachFileSec">
+                        <input type="text" name="candidateexpmonths" id="txtApplicantExperience" placeholder="Experience by Month">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col col-lg-4 col-md-4 col-12 d-flex align-items-center">
+                      <span class="JobProfileTitle JobproCurrentCompany">Current Company</span>
+                    </div>
+                    <div class="col col-lg-8 col-md-8 col-12">
+                      <div class="AttachFileSec">
+                        <input type="text" name="ApplicantCurrentCompany" id="txtApplicantCurrentCompany" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="ApplicantPopUpFormSubmission">
+                      <input type="button" name="PopupFormSubmit" value="Submit" class="PopupFormSubmit" onclick="SaveCareerFromSearch();" />
+                      <input type="button" name="PopupFormCancel" value="Cancel" class="PopupFormCancel" data-dismiss="modal" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thankyou Form -->
+  <!-- Modal -->
+  <div id="ThankyouApplicationPopup" class="modal fade" role="dialog">
+    <div class="CareerModelContainer" id="career_page_wrapper">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="ApplicationWrapper text-center">
+                <p id="spnSuccessMsg" class="formsubDescriptionsubdetailes" style="display:block;">Thank you for reaching out to us,<br> we will get back to you shortly</p>
+                <hr class="commingsoonbreakline">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="CssLoaderStyles" id="AjaxLoader" style="display: none;">
+    <div class="CssLoaderAlign">
+      <div class="Logo-loader"></div>
+      <div class="logoloader"></div>
+    </div>
+  </div>
+  <!-- js included -->
+  <script defer src="/assets/js/custom.js?d=20200124"></script>
+  <!-- ./Footer -->
+  <!-- jQuery first, then Popper, then Bootstrap JS., owl-carousel2 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="/assets/js/jquery.validate.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      BindCareerFields(1);
+      //$('#CareerSearch').click(function () {
+      //    $('html, body').animate({ scrollTop: $('.ChooseJobSec').offset().top }, 1000);
+      //    $('.chooseJobsFields').css('display', 'block');
+      //});
+        SourceTypeId = parseInt(getQueryStringValues()["source"]);
+        if (SourceTypeId == 2 || SourceTypeId == 3) {
+            $('.career-wrap').css('padding', '0px');
+            $('.see-opening-wrap').css('padding-top', '5px');
+        }
+        });
+    </script>
+</body>
+
+</html>
