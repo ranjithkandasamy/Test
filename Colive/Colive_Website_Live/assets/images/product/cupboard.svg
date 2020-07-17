@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="40px" viewBox="0 0 32 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>474FC78D-E913-4679-BB6F-E34922EB9B8E</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Main-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product-page" transform="translate(-456.000000, -1758.000000)">
+            <g id="Group-88" transform="translate(456.666667, 1758.000000)">
+                <g id="Group-80">
+                    <rect id="Rectangle" stroke="#979797" stroke-width="1.584" fill="#D8D8D8" x="0.792" y="24.792" width="14.7317895" height="4.816"></rect>
+                    <rect id="Rectangle" stroke="#EF0073" fill="#FFFFFF" x="0.5" y="0.5" width="30" height="39" rx="1.584"></rect>
+                    <path d="M0.5,23.5 L15.8157895,23.5 L15.8157895,0.5 L1.584,0.5 C0.985323331,0.5 0.5,0.985323331 0.5,1.584 L0.5,23.5 Z" id="Rectangle" stroke="#EF0073" fill="#FFFFFF"></path>
+                    <path d="M0.5,30.9 L0.5,38.416 C0.5,39.0146767 0.985323331,39.5 1.584,39.5 L15.8157895,39.5 L15.8157895,30.9 L0.5,30.9 Z" id="Rectangle-Copy-37" stroke="#EF0073" fill="#FFFFFF"></path>
+                    <rect id="Rectangle-Copy-38" stroke="#EF0073" fill="#FFFFFF" x="0.5" y="22.9" width="15.3157895" height="8.6"></rect>
+                    <rect id="Rectangle" stroke="#EF0073" fill="#FFFFFF" x="3.76315789" y="5.3" width="8.78947368" height="13.4"></rect>
+                    <path d="M18.113474,11.028125 L18.113474,19.2" id="Path-28" stroke="#EF0073" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="permanentredirection.aspx.cs" Inherits="Colive.Website.handbook.permanentredirection" %>

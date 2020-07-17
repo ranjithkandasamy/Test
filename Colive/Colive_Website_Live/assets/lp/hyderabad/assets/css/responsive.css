@@ -1,0 +1,424 @@
+﻿    @media (max-width: 1350px) and (min-width: 1310px) {
+        .lp-form-section {
+            overflow: auto;
+            max-height: 208px !important;
+            overflow: auto;
+        }
+        .logo-place .WebLogo {
+            left: -8vw !important;
+        }
+
+    }
+
+    @media (max-width: 1430px) and (min-width: 1410px) {
+        .lp-form-section {
+            overflow: auto;
+            max-height: 300px !important;
+            overflow: auto;
+        }
+    }
+
+    @media (max-width: 1400px) and (min-width: 1300px) {
+        .lp-form-section {
+            max-height: 326px;
+        }
+    }
+
+    @media (max-width: 1310px) and (min-width: 1260px) {
+        .lp-form-section {
+            max-height: 203px !important;
+        }
+
+        .logo-place img {
+            left: -7vw !important;
+        }
+        .logo-place .WebLogo {
+            left: -8vw !important;
+        }
+    }
+
+    /* only screen 1280 */
+    @media only screen and (max-width: 1280px ){
+        .logo-place img {
+            left: -7vw !important;
+        }
+        .logo-place .WebLogo {
+            left: -7vw !important;
+        }
+    }
+    /* 1200 - 1380 */
+    
+    @media (max-width: 1270px) and (min-width: 1200px) {
+        section {
+            padding: 38px 0 25px 0;
+        }
+        .slider-wrapper {
+            height: 500px !important;
+        }
+        .slider-headline h1 {
+            font-size: 36px !important;
+            line-height: 1.2 !important;
+        }
+        .lp-item-heading.font-18 {
+            font-size: 12px !important;
+        }
+        .spnPhonenumber {
+            font-size: 14px !important;
+            margin-top: 0px !important;
+        }
+        .CallImg {
+            height: 25px !important;
+            margin-top: 2px !important;
+        }
+        .spnimgHolder {
+            height: 28px !important;
+            width: 28px !important;
+            margin-right: 6px;
+        }
+        .lp-img-size {
+            width: 100% !important;
+            height: 185px !important;
+        }
+        .lp-item-img img {
+            width: 55px !important;
+        }
+        .buttonCSS {
+            font-size: 14px !important;
+        }
+        p {
+            font-size: 16px !important;
+            line-height: 1.5 !important;
+        }
+        .font-26 {
+            font-size: 22px !important;
+        }
+        .font-18 {
+            font-size: 16px !important;
+        }
+        .lp-promises-img img {
+            width: 63% !important;
+        }
+        .lp-img-size.m-l1,
+        .lp-img-size.m-r1 {
+            margin: 0;
+            padding: 6px;
+        }
+        .pt-150 {
+            padding-top: 30vh;
+        }
+        .logo-place img {
+            position: absolute;
+            left: -80px !important;
+            width: 100px;
+        }
+        .callWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lp-form-section {
+            max-height: 210px;
+        }
+        .logo-place .WebLogo {
+            left: -7vw !important;
+        }
+    }
+
+    @media (max-width: 1200px) and (min-width: 1024px) {
+        .lp-form-section {
+            max-height: 187px !important;
+        }
+    }
+
+    /* Ipad */
+    @media only screen and (max-width: 1024px) {
+        .container {
+            max-width: 960px;
+        }
+
+        .pt-30 {
+            padding-top: 17vh;
+        }
+
+        .logo-place .WebLogo {
+            left: 0vw !important;
+        }
+
+    }
+    @media only screen and (max-width: 768px) {
+        .container {
+            max-width: 720px;
+        }
+    }
+
+    /* general mobile devices */
+
+    @media (max-width: 767px) {
+        .container {
+            width: 100%;
+            max-width: 100% !important;
+            padding: 0 15px !important;
+        }
+        .width20 {
+            width: 100% !important;
+        }
+        .font-26 {
+            font-size: 22px;
+        }
+        .btnBox {
+            margin: 0px 0 !important;
+        }
+        .callWrapper {
+            width: 58% !important;
+            margin-top: 4px !important;
+            padding-bottom: 14px !important;
+        }
+        .slider-headline h1 {
+            font-size: 24px !important;
+            font-weight: 600;
+            line-height: 1.4;
+            text-align: left;
+        }
+        .row {
+            display: block;
+            flex-direction: column !important;
+            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+        }
+        .lp-img-size {
+            width: 100% !important;
+            height: auto !important;
+        }
+        .lp-img-size.m-l1 {
+            margin-left: 0rem !important;
+        }
+        .lp-promises-img img {
+            width: auto !important;
+        }
+        #promises .lp-row.row.m-t2 {
+            display: flex;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+        }
+        #promises .lp-row.row.m-t2 .lp-promises.xlarge-2.large-2.medium-2.small-6 {
+            padding: 15px 0px;
+        }
+        .coliver-talk-carousel {
+            height: 320px !important;
+        }
+        .plr45 {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+        .shadow-effect .plr45 {
+            padding-left: 45px !important;
+            padding-right: 45px !important;
+        }
+        .shadow-effect .font-22 {
+            font-size: 18px !important;
+        }
+        .shadow-effect .font-16 {
+            padding-top: 10px !important;
+            font-size: 14px !important;
+        }
+        .logo-place img {
+            position: absolute;
+            left: 4vw !important;
+            width: 100px;
+        }
+        .slider-wrapper {
+            height: 330px !important;
+        }
+        .pt-30 {
+            padding-top: 17vh;
+        }
+        #offer .lp-row.row {
+            display: flex;
+            flex-direction: row !important;
+        }
+        #offer .lp-item.width20 {
+            width: 33.33% !important;
+        }
+        .lp-item-img img {
+            width: 38px !important;
+        }
+
+        section {
+            padding: 0px 0 18px 0;
+            background: #fff;
+        }
+        #offer {
+            padding-top: 15px !important;
+            padding-bottom: 0px;
+        }
+
+        p {
+            font-size: 14px !important;
+            line-height: 1.5;
+        }
+        .font-14 {
+            font-size: 12px !important;
+        }
+
+        .font-16 {
+            font-size: 14px;
+        }
+
+        .font-18 {
+            font-size: 14px;
+        }
+
+        .font-20 {
+            font-size: 14px;
+        }
+
+        .lp-item .lp-item-heading.font-14 {
+            font-size: 14px !important;
+        }
+
+        #scheduleBar {
+            display: block !important;
+        }
+        .ulMainForm > li.row.fieldWrap {
+            width: 111%;
+            display: flex;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+        }
+        #faq-testimonials {
+            margin-top: 15px;
+        }
+        .m-hide {
+            display: none;
+        }
+
+        .logo-place {
+            position: relative;
+        }
+
+        .logo-place .WebLogo {
+            left: 0vw !important;
+        }
+        .formbox {
+            width: 100vw !important;
+            height: 80vh !important;
+            position: relative !important;
+            right: 0% !important;
+            overflow: hidden;
+        }
+        .bgBottom {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    
+    @media (min-width:320px) and (max-width: 360px) {
+        .formbox {
+            height: 82vh !important;
+        }
+
+        .WebLogo:before {
+            background-position: 0px -146px !important;
+            background-size: 400px auto !important;
+        }
+    }
+
+    @media only screen and (max-width: 360px) {
+        .coliver-talk-carousel {
+            height: 275px !important;
+        }
+        .height150 {
+            height: 180px;
+        }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width:490px) {
+        .formbox {
+            height: 60vh !important;
+        }
+        .height150 {
+            height: 145px;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .formbox {
+            height: 88vh !important;
+        }
+        .height150 {
+            height: 193px;
+        }
+        .font-26 {
+            font-size: 20px;
+        }
+        .slider-headline h1 {
+            font-size: 18px !important;
+            font-weight: 600;
+            line-height: 1.4;
+            text-align: left;
+        }
+        .pt-30 {
+            padding-top: 25vh;
+        }
+    }
+    @media only screen and (min-width: 600px) and (max-width: 610px){
+        .formbox {
+            height: 52vh !important;
+        }
+        .coliver-talk-carousel {
+            height: 215px !important;
+        }
+        .height150 {
+            height: 132px;
+        }
+    }
+
+    @media only screen and (min-width: 412px) and (max-width:413px) {
+        .coliver-talk-carousel {
+            height: 256px !important;
+        }
+        .formbox {
+            height: 70vh !important;
+        }
+    }
+
+    @media only screen and (min-width: 384px) and (max-width: 390px) {
+        .height150 {
+            height: 175px;
+        }
+    }
+
+    @media only screen and (min-width: 375px) and (max-width: 380px) {
+        .slider-headline h1 {
+            font-size: 22px !important;
+        }
+        .height150 {
+            height: 168px;
+        }
+        .formbox {
+            height: 73vh !important;
+        }
+    }
+
+    @media only screen and (max-width: 411px) and (min-width: 410px) {
+        .height150 {
+            height: 165px;
+        }
+        .formbox {
+            height: 68vh !important;
+        }
+    }
+
+    @media only screen and (max-width: 455px) and (min-width: 454px) {
+        .formbox {
+            height: 70vh !important;
+        }
+    }
+
+    @media only screen and (min-width: 413px) and (max-width:414px) {
+        .formbox {
+            height: 68vh !important;
+        }
+    }

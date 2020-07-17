@@ -1,0 +1,247 @@
+﻿<!-- site footer include -->
+<footer id="footer">
+    <div class="container-fluid p-0">
+        <!-- Footer menu for desktop and tablet only -->
+        <div class="ipad-modalview">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="panel with-nav-tabs panel-default">
+                    <div class="panel-heading">
+                        <ul class="nav nav-tabs row footer_nav">
+                            <li class="col-lg-2 col-sm-2 col-6 text-center"><a href="/">Home</a></li>
+                            <li class="col-lg-2 col-sm-2 col-6 text-center"><a href="/aboutus">About Us</a></li>
+                            <li class="col-lg-2 col-sm-2 col-6 text-center"><a href="/contactus">Contact Us</a></li>
+                            <li class="col-lg-2 col-sm-2 col-6 text-center"><a href="/partnerwithus">Our Partners</a></li>
+                            <li class="col-lg-2 col-sm-2 col-6 text-center"><a href="/careers">Work with Us</a></li>
+                            <li class="col-lg-2 col-sm-2 col-6 text-center dropdown">
+                                <a href="#" data-toggle="dropdown">More <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="/faq">FAQs</a></li>
+                                    <li><a href="/news">Press</a></li>
+                                    <li><a href="/handbook" target="_blank">Handbook</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="footerPanel-SecondRow">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="Panel-Second-row">
+                        <ul class="list-unstyled quick-links row">
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/cowork247"><img src="/assets/images/footer/CoWork247.png" class="img-fluid" /><div>CoWork247</div></a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/corporate"><img src="/assets/images/footer/ColiveForCorporates.png" class="img-fluid" /><div>Colive for Corporates</div></a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="http://blog.colive.in/"><img src="/assets/images/footer/Blogs.png" class="img-fluid" /><div>Blogs</div></a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/community"><img src="/assets/images/footer/Events.png" class="img-fluid" /><div>Community</div></a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/socialmedia"><img src="/assets/images/footer/wearesocial.png" class="img-fluid" /><div>We are Social</div></a></li>
+                            <li class="col-lg-2 col-sm-6 col-6 text-center"><a class="NewFooter_Align" href="/awards-recognition"><img src="/assets/images/footer/awardsrecognition.png" class="img-fluid" /><div>Awards & Recognition</div></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="Panel-Third-row">
+                    <ul class="list-unstyled quick-links row">
+                        <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="http://locations.colive.in/" target="_blank">Find a Property</a></li>
+                        <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/sitemap">Sitemap</a></li>
+                        <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/privacypolicy">Privacy Policy </a></li>
+                        <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/termsandconditions"> Terms & Conditions</a></li>
+                        <li class="col-lg-2 col-sm-6 col-6 text-center"><a href="/mobile-apps">Download Apps</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">© Colive 2020</div>
+</footer>
+<!-- social buttons, terms & condition and privacy policy -->
+<!-- Toast Section(alert popup) -->
+<div class="toastwrap">
+    <div class="toast">
+        <i class="fa fa-times toastclose" aria-hidden="true" onclick="$('.toastwrap').fadeOut();"></i>
+        <span id="ToastMsg" class="ToastMsg"></span>
+    </div>
+</div>
+<!-- Toast Section(alert popup) -->
+<!-- hidden fields -->
+<input type="hidden" id="hdnCustomerId" />
+<input type="hidden" id="hdnBookingId" />
+<input type="hidden" id="hdnBookingStatusId" />
+<!-- hidden fields -->
+<!-- Side fixed call and chat buttons (hide in mobile display)-->
+<div class="side-fixed">
+    <div class="schedule-booknow-box ">
+        <a href="javascript:redirectschedulevisit();" id="PropertyControls" class="schedule">Schedule a visit</a>
+        <a href="javascript:void(0);" id="ancBooknow" class="booknow">Book now</a>
+        <a href="javascript:void(0);" id="CustomerControls" class="check-in-box">Check-in</a>
+    </div>
+</div>
+
+<!-- Opt-in Palystore popup -->
+<!-- The Modal -->
+<div class="offset-lg-2 col-lg-8 Playstore">
+    <div id="Playstore" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-animate-bottom w3-card-4 col-lg-5 col-md-8 col-sm-8 col-10">
+            <header class="w3-container w3-teal">
+                <span onclick="$('#Playstore').hide();"
+                      class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 whatsappAlign">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="WhatsappContent">
+                                <p id="p_OfferDescription" class="whatsappDescription" style="display:block;">Please raise the service request using Colive app. <br /> We will resolve it within the mentioned TAT. <br /> To download the Colive app please click on the below link </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="WhatsappSuggestButton">
+                                <span class="whatsappNotnow" id="whatsappnotnow">
+                                    <a href="https://play.google.com/store/apps/details?id=com.colivecustomerapp.android&hl=en_IN" class="" target="_blank"><img src="/assets/images/appstore/playstore.png" alt="Android_Playstore_icon" /></a>
+                                </span>
+                                <span class="whatsappYes" id="WhatsappYes">
+                                    <a href="https://apps.apple.com/in/app/colive/id1341694959" class="" target="_blank"><img src="/assets/images/appstore/applestore.png" alt="Apple_IStore_Icon" /></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Opt-in Whatsapp popup -->
+<!-- The Modal -->
+<div class="offset-lg-2 col-lg-8 WhatsappOptin">
+    <div class="w3-modal" id="whatsappOptin">
+        <div class="w3-modal-content w3-animate-top w3-card-4 col-lg-5 col-md-8 col-sm-8 col-10">
+            <header class="w3-container w3-teal">
+                <span onclick="$('#whatsappOptin').hide();" class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-12 WatsappImgAlign padright0">
+                    <div class="whatsapp_CouponImg">
+                        <img src="/assets/images/whatsapp.png" id="imgPartners" alt="Whatsapp_Icon" />
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-12 whatsappAlign">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12 pad0">
+                            <div class="WhatsappContent">
+                                <h4 class="Deals_day" id="whatsappTitle">Whatsapp Opt-in</h4>
+                                <p id="p_OfferDescription" class="whatsappDescription" style="display:block;">Do you wish to receive messages from Colive through your</p>
+                                <p id="p_OfferDescription" class="whatsappDescription" style="display:block;"><span class="WhatsappNumber">Whatsapp No: 91</span><span id="spWhatsappNumber" class="WhatsappNumber"></span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="WhatsappSuggestButton">
+                                <button type="button" class="whatsappYes" id="WhatsappYes" onclick="WhatsAppCustomerOptIn();">Yes I'm in</button>
+                                <button type="button" class="whatsappNotnow" id="whatsappnotnow" onclick="WhatsappPopDisappear()">Not Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offset-lg-2 col-lg-8 WhatsappOptin" data-keyboard="false" data-backdrop="static">
+    <div class="w3-modal" id="cotenantselection">
+        <div class="w3-modal-content w3-animate-top w3-card-4 col-lg-5 col-md-8 col-sm-8 col-10">
+            <!--<header class="w3-container w3-teal">
+                <span onclick="$('#cotenantselection').hide();" class="w3-button w3-display-topright">&times;</span>
+            </header>-->
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-12 WatsappImgAlign padright0">
+                    <div class="whatsapp_CouponImg">
+                        <!--<img src="/assets/images/whatsapp.png" id="imgPartners" alt="Whatsapp_Icon" />-->
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-12 whatsappAlign">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12 pad0">
+                            <div class="WhatsappContent">
+                                <h4 class="Deals_day" id="whatsappTitle">Cotenant Selection</h4>
+                                <p id="p_OfferDescription" class="whatsappDescription" style="display:block;">Please declare to complete the KYC process</p>
+                                <!--<p id="p_OfferDescription" class="whatsappDescription" style="display:block;"><span class="WhatsappNumber">Whatsapp No: 91</span><span id="spWhatsappNumber" class="WhatsappNumber"></span></p>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="WhatsappSuggestButton">
+                                <button type="button" class="whatsappYes" id="WhatsappYes" onclick="CheckSelection(this);">I am staying alone</button>
+                                <button type="button" class="whatsappNotnow" id="whatsappnotnow" onclick="CheckSelection(this)">I am staying with co-tenant</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="HeaderSchduleVisitPopUp" class="modal fade Header_SchduleVisitPopUp" data-loaded="0" data-backdrop="static" style="z-index: 1114;">
+    <div class="modal-dialog container">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <span class="close w3_close" data-dismiss="modal">&times;</span>
+            <section class="login-wrap" id="schedulevisit">
+                <div class="container">
+                    <div class="row">
+                        <div class="signup-box col-lg-6 col-10">
+                            <h4 class="text-center">Schedule Visit</h4>
+                            <form id="schedulevisitformheader" name="schedulevisitform">
+                                <div class="form-group">
+                                    <input type="text" class="form-control name" name="SCHCustomerName" id="SCHCustomerName" aria-describedby="nameHelp" placeholder="Enter Your Name">
+                                    <span class="focus-input100" data-symbol=""><i class="fa fa-user-o"></i></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" name="SCHPhoneNumber" id="SCHPhoneNumber" aria-describedby="nameHelp" placeholder="Enter Your Phonenumber" maxlength="10">
+                                    <span class="focus-input100" data-symbol=""><i class="fa fa-phone"></i></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="SCHCustomerEmailId" id="SCHCustomerEmailId" aria-describedby="emailHelp" placeholder="Enter Your Email">
+                                    <span class="focus-input100" data-symbol=""><i class="fa fa-envelope-o"></i></span>
+                                </div>
+                                <div class="form-group" style="margin-top: -10px;margin-bottom: 16px;">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <select class="form-control" name="SCHCities" id="SCHCities" onchange="BindLocationsbyParentId($(this));"></select>
+                                            <span class="focus-input100" data-symbol=""><i class="fa fa-map-marker"></i></span>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <select class="form-control" name="SCHLocations" id="SCHLocations" onchange="BindPropertiesByLocations($(this));">
+                                              <option value="">Preferred Locations</option>
+                                            </select>
+                                            <span class="focus-input100" data-symbol=""><i class="fa fa-map-marker"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <select class="form-control" name="SCHProperty" id="SCHProperty" onchange="ScheduleDatechangedHeader();">
+                                    <option value="">Select Property</option>
+                                  </select>
+                                    <span class="focus-input100" data-symbol=""><i class="fa fa-building-o"></i></span>
+                                </div>
+                                <div class="form-group pick-date">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="text" class="form-control" style="cursor:pointer;" data-loaded="0" name="SCHScheduleDate" id="SCHScheduleDate" readonly="" onchange="ScheduleDatechangedHeader();" aria-describedby="checkindate" placeholder="Choose a date">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <select class="form-control" id="SCHslVisitSlots" name="SCHslVisitSlots" style="height:100%;"></select>
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary mt-4" id="schedule-btnheader" onclick="SchedulevisitFromHeader(1);">Schedule Visit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+

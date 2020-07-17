@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>7964EA90-9388-43BA-961B-4A2790255E43</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Main-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Product-page" transform="translate(-799.000000, -598.000000)" stroke="#DCE0E2">
+            <g id="share-2" transform="translate(800.000000, 599.000000)">
+                <ellipse id="Oval" cx="15.8333333" cy="3" rx="3.16666667" ry="3"></ellipse>
+                <ellipse id="Oval" cx="3.16666667" cy="10" rx="3.16666667" ry="3"></ellipse>
+                <ellipse id="Oval" cx="15.8333333" cy="17" rx="3.16666667" ry="3"></ellipse>
+                <path d="M5.90055556,11.51 L13.11,15.49" id="Path"></path>
+                <path d="M13.0994444,4.51 L5.90055556,8.49" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

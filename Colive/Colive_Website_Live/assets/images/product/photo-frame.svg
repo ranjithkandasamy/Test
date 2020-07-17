@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="39px" viewBox="0 0 29 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>C2A9C230-F0EB-46A6-BDA9-9C762FB8BCF0</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Main-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product-page" transform="translate(-876.000000, -1876.000000)" stroke="#EF0073">
+            <g id="Group-66" transform="translate(876.000000, 1876.000000)">
+                <polyline id="Path-15" stroke-linecap="round" stroke-linejoin="round" points="7.90909091 9.25446865 15.1457353 2.27373675e-13 22.3823797 9.25446865"></polyline>
+                <g id="Group-65" transform="translate(0.000000, 7.285714)" fill="#FFFFFF">
+                    <rect id="Rectangle" x="0.5" y="0.5" width="28" height="30.7142857" rx="2.64"></rect>
+                    <g id="Group-64" transform="translate(3.954545, 3.964286)">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="20.0909091" height="22.7857143" rx="2.64"></rect>
+                        <g id="Group-63" transform="translate(3.954545, 7.928571)">
+                            <rect id="Rectangle-Copy-25" x="9.72727273" y="0.5" width="6.90909091" height="9.57142857" rx="1.32"></rect>
+                            <rect id="Rectangle" x="5.77272727" y="4.46428571" width="6.90909091" height="8.25" rx="1.32"></rect>
+                            <ellipse id="Oval" cx="3.95454545" cy="3.96428571" rx="3.95454545" ry="3.96428571"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

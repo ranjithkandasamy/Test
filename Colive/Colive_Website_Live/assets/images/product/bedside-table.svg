@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>CB6D965C-14B6-4591-B1CD-E7A9A0854BA8</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Main-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product-page" transform="translate(-314.000000, -1758.000000)" stroke="#EF0073">
+            <g id="Group-79" transform="translate(314.833333, 1759.000000)">
+                <path d="M4.5,22 L4.5,38" id="Path-27-Copy" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-78">
+                    <g id="Group-77" transform="translate(4.000000, 21.000000)">
+                        <g id="Group-74">
+                            <rect id="Rectangle" fill="#FFFFFF" x="0.5" y="0.5" width="15" height="5"></rect>
+                            <path d="M7,3 L9,3" id="Path-28-Copy-2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                        <g id="Group-75" transform="translate(15.000000, 0.000000)">
+                            <rect id="Rectangle-Copy-35" fill="#FFFFFF" x="0.5" y="0.5" width="15" height="5"></rect>
+                            <path d="M7,3 L9,3" id="Path-28-Copy" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                    <path d="M0,21.5 L38.2612305,21.5" id="Path-26" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M34.5546875,21.6569824 L34.5546875,37.8820801" id="Path-27" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M26.1796422,21.8686523 L26.1796422,8 C26.1796422,6.34314575 24.8364964,5 23.1796422,5 L14,5 C12.3431458,5 11,6.34314575 11,8 L11,21.8686523" id="Path-29"></path>
+                    <g id="Group-76" transform="translate(13.000000, 0.000000)">
+                        <circle id="Oval" fill="#FFFFFF" cx="5.5" cy="5.5" r="5.5"></circle>
+                        <path d="M2.06494141,5.5 L5,2.56494141" id="Path-30" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M2.58949818,8.16333008 L7.95905308,2.79377518" id="Path-31" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

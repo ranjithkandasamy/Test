@@ -1,0 +1,24 @@
+﻿/* montserrat font */
+
+
+/* montserrat font */
+
+@font-face {
+    font-family: 'LeelaUIb';
+    src: url('LeelaUIb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Leelawadee-Bold';
+    src: url('Leelawadee Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LeelawUI-Regular';
+    src: url('LeelawUI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LeelUIsl';
+    src: url('LeelUIsl.ttf') format('truetype');
+}
